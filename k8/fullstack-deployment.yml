@@ -71,7 +71,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 2300030813/kubernetes-lab12-frontend:latest  # <-- change this
+          image: 2300030813/kubernetes-lab12-backend:latest  # <-- change this
           ports:
             - containerPort: 1818
 ---
@@ -110,7 +110,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 2300030813/kubernetes-lab12-backend:latest  # <-- change this
+          image: 2300030813/kubernetes-lab12-frontend:latest  # <-- change this
           ports:
             - containerPort: 80
 ---
